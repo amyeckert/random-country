@@ -1,0 +1,130 @@
+body {
+	background-color: #f9f9f9;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+p {
+	 margin: 0;
+	 padding: 0; 
+}
+
+a {
+	text-decoration: none;
+	display: flex;
+}
+a:visited, 
+a:active {
+	color: #000;
+
+}
+
+#flag {
+	z-index: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.gradient {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: -moz-linear-gradient(left, rgba(154,134,114,0.8) 0%, rgba(252,252,252,0.01) 20%, rgba(252,252,252,0) 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(154,134,114,0.8) 0%,rgba(252,252,252,0.01) 20%,rgba(252,252,252,0) 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(154,134,114,0.8) 0%,rgba(252,252,252,0.01) 20%,rgba(252,252,252,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a8672', endColorstr='#00fcfcfc',GradientType=1 ); /* IE6-9 */
+}
+
+
+article {
+	display: flex;
+	flex-flow: row;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+}
+
+.article--inner {
+	width: 24vw;
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	flex: 1 0 auto;
+	background-color: hsla(50, 33%, 25%, 0.3);
+}
+
+h1 {
+	font-family: 'Bungee Shade', cursive;
+	font-size: 4rem;
+	opacity: 1;
+	color: #fff;
+	opacity: 1;
+    padding: 0 0 0 20px;
+}
+
+.choose {
+	display: block;
+	width: 100%;
+	min-height: 80px;
+	font-family: 'Hind', sans-serif;
+	font-size: 1rem;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	opacity: 0.5;
+}
+
+.country-info, 
+.share-links {
+	font-family: 'Hind', sans-serif;
+	font-size: 1.5rem;
+	opacity: 0.5;
+	background-color: #fff;
+	margin-top: 0;
+	padding: 0 0 0 20px;
+
+}
+.share-links {
+	padding: 0 10px;
+
+}
+
+.share {
+	display: inline-flex;
+	flex-flow: row nowrap;
+	background-color: transparent;
+	font-family: 'Hind', sans-serif;
+	font-size: 0.8rem;
+	color: #000;
+	padding: 10px 10px 0 0 ;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 0;
+	left: calc(50% - 10%);
+  	left: -webkit-calc(50% - 10%);
+
+}
+
+.twitter-share-button {
+	display: inline-flex;
+	align-content: stretch;
+	color: #000;
+}
+
+.twitter-share-button:visited {
+	color: #000;
+
+}
+.social {
+	height: 50px;
+	background-color: transparent;
+
+}
+
+
+
