@@ -15,28 +15,37 @@
     	var $capital = $('#capital');
     	var $twitter = $(".twitter-share-button");
         var $body = $(".body");
-        $flag.hide();
+
         $body.addClass("map");
 
-        console.log($body);
+        var getNewFlag = function() {
+
+        }
+
         //------ choose random country ----------------------------//
         $(".choose").on("click", function(event) {
         	event.preventDefault();
         	console.log("clicked");
 
-        	 // call to API 
+            //--- fade out previous src ----//
+            $flag.fadeOut(10);
+            console.log("faded out");
+
+        	// call to API 
         	$.ajax({
 		        url: "https://restcountries.eu/rest/v2/all"
 		    }).then(function(countries) {
+
 		    	// choose a random country and show name, flag, capital, and current weather.
 		    	var randomCountry = Math.floor(Math.random() * countries.length);
 		    	var countryIndex = countries[randomCountry]; 	
 		    	var capital = countryIndex.capital;
 
-		    	$country.html(countryIndex.name);
-		    	$flag = $($flag).attr("src", countryIndex.flag).show();
 				$capital.html(capital);
-
+                $country.html(countryIndex.name);
+            
+                $flag = $($flag).attr("src", countryIndex.flag).fadeIn(600);
+                
 				//-------- get country and location to paste into a tweet-----------------//
 
 				let textToCopy = "I want to go to " + capital + ", " + countryIndex.name + "!";
@@ -44,10 +53,10 @@
 		  		$twitter= $($twitter).attr("href", "https://twitter.com/intent/tweet?text=" + textToCopy + "");
 				console.log($twitter, textToCopy);
 
-                //-------- remove and add map backgroung img and color ------------------//
+                //-------- remove and add map backgroung on body element ------------------//
                 $body.removeClass("map");
 
-                console.log("clicked" + $body);
+                console.log("clicked ", $flag);
 		    });	        		
 
         });
