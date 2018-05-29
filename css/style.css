@@ -1,11 +1,20 @@
-body {
-	background-color: #f9f9f9;
+.map {
+	background-color: #ffeba3;
+	background-image: url("../img/Political-Map-of-the-World2.png");
+ 	background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 131%;
+    background-position: -5rem -3.5rem;
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
 	width: 100%;
 	height: 100%;
 	opacity: 1;
+}
+body {
+	background-color: #f9f9f9;
+
 }
 
 p {
@@ -33,12 +42,12 @@ a:active {
 	display: block;
 	position: absolute;
 	width: 100%;
-	height: 100%;
-	background: -moz-linear-gradient(left, rgba(154,134,114,0.8) 0%, rgba(252,252,252,0.01) 20%, rgba(252,252,252,0) 50%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, rgba(154,134,114,0.8) 0%,rgba(252,252,252,0.01) 20%,rgba(252,252,252,0) 50%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, rgba(154,134,114,0.8) 0%,rgba(252,252,252,0.01) 20%,rgba(252,252,252,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a8672', endColorstr='#00fcfcfc',GradientType=1 ); /* IE6-9 */
-}
+	height: 100%; /* FF3.6-15 */
+background: -moz-linear-gradient(left, hsla(184,81%,50%,0.8) 0%, hsla(0,0%,99%,0.01) 25%, hsla(0,0%,99%,0) 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, hsla(184,81%,50%,0.8) 0%,hsla(0,0%,99%,0.01) 25%,hsla(0,0%,99%,0) 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, hsla(184,81%,50%,0.8) 0%,hsla(0,0%,99%,0.01) 25%,hsla(0,0%,99%,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc18d9e7', endColorstr='#00fcfcfc',GradientType=1 ); /* IE6-9 */
+}	
 
 
 article {
@@ -51,62 +60,77 @@ article {
 
 .article--inner {
 	width: 24vw;
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	flex-flow: column nowrap;
 	flex: 1 0 auto;
-	background-color: hsla(50, 33%, 25%, 0.3);
+	padding: 0 0 0 3rem;
 }
 
 h1 {
 	font-family: 'Bungee Shade', cursive;
 	font-size: 4rem;
+	margin: 4rem 0 0 0;
+
 	opacity: 1;
 	color: #fff;
-	opacity: 1;
-    padding: 0 0 0 20px;
+
 }
 
 .choose {
-	display: block;
-	width: 100%;
-	min-height: 80px;
-	font-family: 'Hind', sans-serif;
-	font-size: 1rem;
-	text-transform: uppercase;
-	border: none;
-	outline: none;
-	opacity: 0.5;
+    display: block;
+    position: relative;
+    left: -0.5rem;
+    bottom: -1.5rem;
+    width: 40%;
+    min-height: 80px;
+    font-family: 'Hind', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    outline: none;
+    opacity: 0.5;
+    padding: 25px 10px;
 }
 
-.country-info, 
+.country-info {
+	font-family: 'Hind', sans-serif;
+    font-size: 1.5rem;
+    opacity: 0.5;
+    background-color: #fff;
+    margin-top: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 25px 10px;
+} 
 .share-links {
 	font-family: 'Hind', sans-serif;
 	font-size: 1.5rem;
 	opacity: 0.5;
-	background-color: #fff;
+	background-color: transparent;
 	margin-top: 0;
-	padding: 0 0 0 20px;
-
-}
-.share-links {
-	padding: 0 10px;
+	padding: 0 0 0 10px;
 
 }
 
 .share {
 	display: inline-flex;
 	flex-flow: row nowrap;
-	background-color: transparent;
+	background-color: #fff;
 	font-family: 'Hind', sans-serif;
 	font-size: 0.8rem;
-	color: #000;
+	color: #fff;
 	padding: 10px 10px 0 0 ;
-	opacity: 0.8;
-	position: fixed;
-	bottom: 0;
-	left: calc(50% - 10%);
-  	left: -webkit-calc(50% - 10%);
+	opacity: 0.6;
+	position: absolute;
+    bottom: -4.2rem;
+	left: calc(31% - 10%);
+  	left: -webkit-calc(31% - 10%);
+  	border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 25px 10px;
 
 }
 
@@ -123,6 +147,8 @@ h1 {
 .social {
 	height: 50px;
 	background-color: transparent;
+	border: 1px solid white;
+    border-radius: 50%;
 
 }
 

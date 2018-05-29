@@ -14,7 +14,11 @@
     	var $country = $('#country-name');   
     	var $capital = $('#capital');
     	var $twitter = $(".twitter-share-button");
+        var $body = $(".body");
+        $flag.hide();
+        $body.addClass("map");
 
+        console.log($body);
         //------ choose random country ----------------------------//
         $(".choose").on("click", function(event) {
         	event.preventDefault();
@@ -30,7 +34,7 @@
 		    	var capital = countryIndex.capital;
 
 		    	$country.html(countryIndex.name);
-		    	$flag = $($flag).attr("src", countryIndex.flag);
+		    	$flag = $($flag).attr("src", countryIndex.flag).show();
 				$capital.html(capital);
 
 				//-------- get country and location to paste into a tweet-----------------//
@@ -39,6 +43,11 @@
 		  		
 		  		$twitter= $($twitter).attr("href", "https://twitter.com/intent/tweet?text=" + textToCopy + "");
 				console.log($twitter, textToCopy);
+
+                //-------- remove and add map backgroung img and color ------------------//
+                $body.removeClass("map");
+
+                console.log("clicked" + $body);
 		    });	        		
 
         });
