@@ -1,6 +1,6 @@
 body {
 
-	background-color: hsla(44, 100%, 87%, 70%);  
+	background-color: hsla(53, 100%, 98%, 70%);  
 	margin: 0;
 	padding: 0;
 
@@ -49,9 +49,9 @@ a:active {
 	width: 100%;
 	height: 100%; /* FF3.6-15 */
 	z-index: 1;
-background: -moz-linear-gradient(left, hsla(184,81%,50%,0.8) 0%, hsla(0,0%,99%,0.01) 25%, hsla(0,0%,99%,0) 50%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, hsla(184,81%,50%,0.8) 0%,hsla(0,0%,99%,0.01) 25%,hsla(0,0%,99%,0) 50%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, hsla(184,81%,50%,0.8) 0%,hsla(0,0%,99%,0.01) 25%,hsla(0,0%,99%,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: -moz-linear-gradient(left, hsla(184,81%,50%,0.8) 0%, hsla(0,0%,99%,0.01) 31%, hsla(0,0%,99%,0) 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, hsla(184,81%,50%,0.8) 0%,hsla(0,0%,99%,0.01) 31%,hsla(0,0%,99%,0) 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, hsla(184,81%,50%,0.8) 0%,hsla(0,0%,99%,0.01) 31%,hsla(0,0%,99%,0) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc18d9e7', endColorstr='#00fcfcfc',GradientType=1 ); /* IE6-9 */
 }	
 
